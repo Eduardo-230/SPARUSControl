@@ -1,0 +1,5 @@
+function [Out] = Command(PosE,VitB,AccB)
+
+Thrust=[0 0 100]; %[VerticalThruster, LeftHorizontalThruster, RightHorizontalThruster]
+
+Out=Thrust;
