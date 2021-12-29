@@ -21,7 +21,7 @@ Fg = 1* [-Para.P * sin(theta) ;
     
 % Expressed in b and computed in G
     
-%% Force d'ArchimÃ¨de
+%% Force d'Archimède
 
 Fa_F = [Para.B * sin(theta) ;
         -Para.B * cos(theta)*sin(phi) ;
@@ -58,12 +58,17 @@ Fc = C_all * VitB   ;
 Vit_0=VitB;
 Ff_0 =  Para.S0.Kq * abs(Vit_0).*Vit_0 ;
 
+% Vit_1=VitB;
+% Ff_1 =  Para.S1.Kq * abs(Vit_1).*Vit_1 ;
+% 
+% Vit_2=VitB;
+% Ff_2 =  Para.S0.Kq * abs(Vit_2).*Vit_2 ;
 
 %% Propulsions Forces
 Fp = Para.Eb * Thrust ;
-A = Para.Mg\ (Ff_0+ Fa + Fg+ Fp- Fc) 
+
 
 %% Accelearion computation :
-AccG = Para.Mg\ (Ff_0+ Fa + Fg+ Fp- Fc) ; % Mg\ = Mg^-1 computed at the gravity center of the Sparus
+AccG = Para.Mg\ (-Ff_0 +Fa + Fg+ Fp- Fc) ; % Mg\ = Mg^-1 computed at the gravity center of the Sparus
 
 
