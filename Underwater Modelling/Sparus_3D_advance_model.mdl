@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2"
+    ComputedModelVersion    "1.3"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -71,6 +71,15 @@ Model {
 	Dimension		6
 	Object {
 	  $ObjectID		  5
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1328.0, 562.0]
+	  ZoomFactor		  [0.7807017543859649]
+	  Offset		  [65.381415477478754, 229.06741573033707]
+	}
+	Object {
+	  $ObjectID		  6
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "545"
@@ -79,22 +88,13 @@ Model {
 	  Offset		  [97.689807692307681, 73.2198677884615]
 	}
 	Object {
-	  $ObjectID		  6
+	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "476"
 	  Extents		  [1328.0, 562.0]
 	  ZoomFactor		  [1.1194968553459119]
 	  Offset		  [-113.67828300561803, 17.49438202247191]
-	}
-	Object {
-	  $ObjectID		  7
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1328.0, 562.0]
-	  ZoomFactor		  [0.7807017543859649]
-	  Offset		  [65.381415477478754, 229.06741573033707]
 	}
 	Object {
 	  $ObjectID		  8
@@ -158,9 +158,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Dell"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Dec 28 21:08:33 2021"
-  RTWModifiedTimeStamp	  562624830
-  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  LastModifiedDate	  "Wed Dec 29 20:29:29 2021"
+  RTWModifiedTimeStamp	  562704746
+  ModelVersionFormat	  "1.%<AutoIncrement:3>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1004,7 +1004,7 @@ Model {
 	  Description		  ""
 	  Components		  []
 	  StartTime		  "0.0"
-	  StopTime		  "10"
+	  StopTime		  "180"
 	  AbsTol		  "auto"
 	  AutoScaleAbsTol	  on
 	  FixedStep		  "0.01"
@@ -2152,7 +2152,6 @@ Model {
       SID		      "630"
       Position		      [470, 307, 500, 343]
       ZOrder		      40
-      CurrentSetting	      "0"
     }
     Block {
       BlockType		      ManualSwitch
